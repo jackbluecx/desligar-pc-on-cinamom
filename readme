@@ -1,0 +1,63 @@
+# Auto Shutdown
+
+![Ícone](./icone.png)
+
+## Descrição
+O **Auto Shutdown** permite configurar o desligamento automático do computador e executar um script na inicialização do sistema.  
+
+Inclui:  
+- `auto-shutdown-config.py`: script para configurar o desligamento automático.  
+- `auto-shutdown-startup.sh`: script que roda na inicialização do sistema.  
+- Atalhos `.desktop` para facilitar o acesso.  
+- Ícone personalizado `icone.png`.
+
+---
+
+## Instalação
+
+1. Coloque todos os arquivos na sua pasta home (`~/`):
+   - `auto-shutdown-config.py`
+   - `auto-shutdown-startup.sh`
+   - `auto-shutdown-config.desktop`
+   - `auto-shutdown-startup.desktop`
+   - `icone.png`
+   - `install.sh`
+
+2. Dê permissão de execução para os scripts:
+
+```bash
+chmod +x install.sh auto-shutdown-startup.sh auto-shutdown-config.py
+Execute o instalador:
+
+bash
+Copiar código
+./install.sh
+O instalador irá:
+
+Copiar os scripts para ~/bin
+
+Copiar os atalhos .desktop para os locais corretos:
+
+auto-shutdown-config.desktop → ~/.local/share/applications
+
+auto-shutdown-startup.desktop → ~/.config/autostart
+
+Copiar o ícone icone.png para ~/.local/share/applications
+
+Uso
+Configuração do Auto Shutdown: abra pelo menu de aplicativos ou clicando no atalho Auto Shutdown Config.
+
+Inicialização automática: o script auto-shutdown-startup.sh será executado automaticamente na inicialização do sistema.
+
+Observações
+Certifique-se de que a pasta ~/bin está no seu PATH para facilitar a execução dos scripts.
+
+Se os arquivos foram copiados como root, use chown para passar para o usuário comum:
+
+bash
+Copiar código
+sudo chown -R diego:diego ~/bin ~/.local/share/applications ~/.config/autostart
+Para atualizar o ícone ou os atalhos, substitua os arquivos correspondentes na pasta ~/.local/share/applications.
+
+Licença
+Distribuído sob MIT License
