@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Auto Shutdown - Startup
+Comment=Inicia Auto Shutdown na inicialização
+Exec=$HOME/bin/auto-shutdown-startup.sh
+Icon=$HOME/bin/icone.png
+Terminal=false
+X-GNOME-Autostart-enabled=true
+Hidden=false
+
