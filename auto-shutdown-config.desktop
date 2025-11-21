@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Auto Shutdown Config
-Comment=Configurações do Auto Shutdown
-Exec=python3 /caminho/para/auto-shutdown-config.py
-Icon=utilities-terminal
-Terminal=true
-Type=Application
-Categories=Utility;
-
